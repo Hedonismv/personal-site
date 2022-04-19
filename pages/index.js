@@ -19,7 +19,7 @@ import useFetch from "../hooks/useFetch";
 
 const Index = () => {
 
-	const {data, loading, error} = useFetch('https://rest.coinapi.io/v1/exchangerate/TONCOIN/USD','C002BD56-CEF5-4388-84D7-5505050FBE38' )
+	const {data, loading, error} = useFetch('https://min-api.cryptocompare.com/data/price?fsym=TONCOIN&tsyms=USD' )
 
 	return (
 		<Layout>
@@ -35,7 +35,7 @@ const Index = () => {
 					{loading && 'Loading...'}
 					{error && error.message}
 					{data && <Box display={"flex"} alignItems={"center"} justifyContent={"flex-start"}>
-						<GiCutDiamond fontSize={'2rem'} color={'#9ac5db'} style={{marginRight: '1rem'}}/> TON Price: {data.rate.toFixed(2)} $
+						<GiCutDiamond fontSize={'2rem'} color={'#9ac5db'} style={{marginRight: '1rem'}}/> TON Price: {data.USD.toFixed(2)} $
 						</Box> }
 				</Box>
 				<Box display={{md: 'flex'}}>

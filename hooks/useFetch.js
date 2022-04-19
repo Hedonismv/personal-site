@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 
-const UseFetch = (url, key) => {
+const UseFetch = (url) => {
 	const [loading, setLoading] = useState(null)
 	const [error, setError] = useState(null)
 	const [data, setData] = useState(null)
@@ -12,7 +12,7 @@ const UseFetch = (url, key) => {
 		setError(null)
 
 		const source = axios.CancelToken.source()
-		axios.get(url, {cancelToken: source.token, headers: {'X-CoinAPI-Key': key}})
+		axios.get(url, {cancelToken: source.token})
 			.then(res => {
 				setLoading(false);
 				res.data && setData(res.data);
