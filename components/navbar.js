@@ -14,8 +14,7 @@ import {
 	IconButton,
 	useColorModeValue
 } from "@chakra-ui/react";
-import {HamburgerIcon, HumburgerIcon} from '@chakra-ui/icons';
-import {Head} from "next/document";
+import {HamburgerIcon} from '@chakra-ui/icons';
 import ThemeToggleBtn from "./theme-toggle-btn";
 
 
@@ -23,7 +22,7 @@ const LinkItem = ({href, path, children}) => {
 	const active = path === href
 	const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
 	return (
-		<NextLink href={ href}>
+		<NextLink href={ href} passHref>
 			<Link
 				p={2}
 				bg={active ? 'glassTeal' : undefined}

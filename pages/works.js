@@ -1,4 +1,4 @@
-import {Container, Heading, SimpleGrid, Divider} from "@chakra-ui/react";
+import {Container, Heading, SimpleGrid} from "@chakra-ui/react";
 import Section from "../components/section";
 import {WorkGridItem} from "../components/grid-item";
 import taswiqThumb from '../public/images/works/taswiq/taswiq-cover.jpg';
@@ -46,12 +46,12 @@ const Works = () => {
 					</Section>
 					<Section>
 						<WorkGridItem id={'hedo-agency'} title={'Hedo Agency - Amazing agency (SOON)'} thumbnail={hedoAgThumb}>
-							WEB-SITES, PHONE-APP'S, TELEGRAM WEB-BOTS
+							WEB-SITES, PHONE-APP&apos;S, TELEGRAM WEB-BOTS
 						</WorkGridItem>
 					</Section>
 					<Section>
 						<WorkGridItem id={'this-website'} title={'This website (If u want see tech stack)'} thumbnail={thisThumb}>
-							SPOILER: React, JavaScript -> Click to see more
+							SPOILER: React, JavaScript -&gt; Click to see more
 						</WorkGridItem>
 					</Section>
 				</SimpleGrid>

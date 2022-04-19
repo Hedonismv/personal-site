@@ -1,8 +1,6 @@
 import Head from "next/head";
 import NavBar from "../navbar";
 import {Box, Container} from "@chakra-ui/react";
-import NoSsr from "../no-ssr";
-import VoxelObj from "../voxel-obj";
 import Footer from "../footer";
 
 

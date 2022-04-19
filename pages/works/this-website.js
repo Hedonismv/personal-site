@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from "../../components/layouts/article";
 import {Container, Link, List, ListItem} from "@chakra-ui/react";
-import {Meta, Title, WorkImage} from "../../components/work";
+import {Meta, Title} from "../../components/work";
 import P from "../../components/paragraph";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
 

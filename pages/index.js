@@ -61,6 +61,7 @@ const Index = () => {
 							borderRadius={"50%"}
 							display={"inline-block"}
 							src={"/images/new-avatar.jpg"}
+							alt={'avatar'}
 						/>
 					</Box>
 				</Box>
@@ -72,7 +73,7 @@ const Index = () => {
 						Still working on it... Click button under then )
 					</Paragraph>
 					<Box align={'center'} my={4}>
-						<NextLink href={'/works'}>
+						<NextLink href={'/works'} passHref>
 							<Button
 								rightIcon={<ChevronRightIcon/>}
 								colorScheme={"teal"}>
