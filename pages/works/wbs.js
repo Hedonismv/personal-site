@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from "../../components/layouts/article";
 import {Container, Link, List, ListItem} from "@chakra-ui/react";
-import {Meta, Title, WorkImage, WorkVideo} from "../../components/work";
+import {Meta, Title, WorkImage} from "../../components/work";
 import P from "../../components/paragraph";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
 
@@ -27,7 +27,7 @@ const Wbs = () => {
 				</List>
 
 				<WorkImage src="/images/works/wbs/wbs_01.jpg" alt="wbs" />
-				<WorkVideo src={'/images/works/wbs/screen.mov'} alt={'wbs'} wide={true}/>
+				<WorkImage src={'/images/works/wbs/screen.gif'} alt={'wbs'}/>
 				<WorkImage src="/images/works/wbs/wbs_03.jpg" alt="wbs" />
 				<WorkImage src="/images/works/wbs/wbs_04.jpg" alt="wbs" />
 			</Container>

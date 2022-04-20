@@ -1,20 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Layout from "../../components/layouts/article";
 import {Container, Heading, Link, List, ListItem} from "@chakra-ui/react";
-import {Meta, Title, WorkVideo} from "../../components/work";
+import {Meta, Title, WorkImage} from "../../components/work";
 import P from "../../components/paragraph";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
 
 const SimpleImages = () => {
-	const [mobile, setIsMobile] = useState(null)
-
-
-	useEffect(() => {
-		if(window){
-			setIsMobile(window.innerWidth > 450)
-		}
-	},[])
-
 
 	return (
 		<Layout title={'BlockImage'}>
@@ -41,27 +32,21 @@ const SimpleImages = () => {
 					</ListItem>
 				</List>
 				<Heading as={"h3"} mb={5} mt={10}>Like, Subscribe </Heading>
-				<WorkVideo
-					alt={'block_all_vid'}
-					src={'/images/works/blockImage/all_func_sm.mov'}
-					wide={true}
-					autoPlay={mobile}
+				<WorkImage
+					src={'/images/works/blockImage/all_func_sm.gif'}
+					alt={'comm_gif'}
 				/>
 
 				<Heading as={"h3"} mb={5} mt={10}>Upload & Delete </Heading>
-				<WorkVideo
-					alt={'block_del_vid'}
-					src={'/images/works/blockImage/deleting_uploading_sm.mov'}
-					wide={true}
-					autoPlay={mobile}
+				<WorkImage
+					src={'/images/works/blockImage/deleting_uploading_sm.gif'}
+					alt={'comm_gif'}
 				/>
 
 				<Heading as={"h3"} mb={5} mt={10}>Commenting </Heading>
-				<WorkVideo
-					alt={'block_vid'}
-					src={'/images/works/blockImage/comm_sm.mov'}
-					wide={true}
-					autoPlay={mobile}
+				<WorkImage
+					src={'/images/works/blockImage/comm_sm.gif'}
+					alt={'comm_gif'}
 				/>
 			</Container>
 		</Layout>
