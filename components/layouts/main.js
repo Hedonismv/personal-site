@@ -13,6 +13,7 @@ const Main = ({children, router}) => {
 				<meta name="author" content="Vitaly Klyhun" />
 				<meta name="author" content="hedonismv" />
 				<meta name="author" content="hedo agency" />
+				<link rel={"shortcut icon"} href={'/images/hedoLogo.ico'}/>
 				<meta name={'viewport'} content={"width=device-width, initial-scale=1"}/>
 				<title>Vitaly Klyhun - Homepage</title>
 			</Head>
