@@ -30,12 +30,29 @@ const SimpleImages = () => {
 						<span>JavaScript, React, Redux, Redux-Thunk, CSS, Firebase, React-icons, 02Auth - firebase</span>
 					</ListItem>
 				</List>
+				<Heading as={"h3"} mb={5} mt={10}>Like, Subscribe </Heading>
+				<WorkVideo
+					alt={'block_all_vid'}
+					src={'/images/works/blockImage/all_func_sm.mov'}
+					wide={true}
+					autoPlay={window.innerWidth > 450}
+				/>
+
+				<Heading as={"h3"} mb={5} mt={10}>Upload & Delete </Heading>
+				<WorkVideo
+					alt={'block_del_vid'}
+					src={'/images/works/blockImage/deleting_uploading_sm.mov'}
+					wide={true}
+					autoPlay={window.innerWidth > 450}
+				/>
+
 				<Heading as={"h3"} mb={5} mt={10}>Commenting </Heading>
 				<WorkVideo
 					alt={'block_vid'}
-					src={'/images/works/blockImage/comm.mov'}
+					src={'/images/works/blockImage/comm_sm.mov'}
 					wide={true}
-					autoPlay={window.innerWidth > 450}/>
+					autoPlay={window.innerWidth > 450}
+				/>
 			</Container>
 		</Layout>
 	);
