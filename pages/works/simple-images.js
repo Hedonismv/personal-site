@@ -31,7 +31,11 @@ const SimpleImages = () => {
 					</ListItem>
 				</List>
 				<Heading as={"h3"} mb={5} mt={10}>Commenting </Heading>
-				<WorkVideo alt={'block_vid'} src={'/images/works/blockImage/comm.mov'} wide={true}/>
+				<WorkVideo
+					alt={'block_vid'}
+					src={'/images/works/blockImage/comm.mov'}
+					wide={true}
+					autoPlay={window.innerWidth > 450}/>
 			</Container>
 		</Layout>
 	);
