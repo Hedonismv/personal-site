@@ -4,3 +4,5 @@ dist
 .vercel
 .env
 .idea
+build
+.build
