@@ -1,4 +1,15 @@
-import {Container, Box, Heading, Image, useColorModeValue, Link, Button, ListItem, List} from "@chakra-ui/react";
+import {
+	Container,
+	Box,
+	Heading,
+	Image,
+	useColorModeValue,
+	Link,
+	Button,
+	ListItem,
+	List,
+	UnorderedList
+} from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import NextLink from 'next/link';
@@ -70,9 +81,30 @@ const Index = () => {
 						Work
 					</Heading>
 					<Paragraph>
-						Still working on it... Click button under then )
+						<BioSection>
+							<BioYear>2019-2020</BioYear>
+							<b>Co-Founder of Taswiq-Studio</b>
+							<UnorderedList style={{textIndent: 'initial'}}>
+								<ListItem>Developed marketing plans and digital marketing</ListItem>
+								<ListItem>Controlled the price policy</ListItem>
+								<ListItem>Created new products and services</ListItem>
+								<ListItem>Signed contracts and created commercial proposals</ListItem>
+								<ListItem>Developed frontend with JavaScript and PHP</ListItem>
+							</UnorderedList>
+						</BioSection>
+						<BioSection>
+							<BioYear>2021-present</BioYear>
+							<b>Frontend developer in Sheri & freelancing</b>
+							<UnorderedList style={{textIndent: 'initial'}}>
+								<ListItem>Developed frontend with React.js, Next.js + Redux, Redux-thunk</ListItem>
+								<ListItem>Developed backend with Node.js + express, MongoDB</ListItem>
+								<ListItem>Made mobile-first adaptive and responsive web-apps.</ListItem>
+								<ListItem>Made SEO promotion for websites.</ListItem>
+								<ListItem>Designed in Figma some elements of the website.</ListItem>
+							</UnorderedList>
+						</BioSection>
 					</Paragraph>
-					<Box align={'center'} my={4}>
+					<Box align={'center'} my={8}>
 						<NextLink href={'/works'} passHref>
 							<Button
 								rightIcon={<ChevronRightIcon/>}
@@ -93,7 +125,8 @@ const Index = () => {
 					</BioSection>
 					<BioSection>
 						<BioYear>2019</BioYear>
-						Completed the BCEUCC&apos;s Program in the Belorussian Commerce Economic University Customer Cooperation as
+						Completed the branch of BUTECC&apos;s Program in the Branch of the Belarusian University of
+						Trade and Economics of Consumer Cooperation as
 						a Marketing&Economic Specialist (College program)
 					</BioSection>
 					<BioSection>
@@ -102,7 +135,7 @@ const Index = () => {
 					</BioSection>
 					<BioSection>
 						<BioYear>2019 - 2023</BioYear>
-						Studying in BSEU - Belorussian State Economic University as a Marketing&Economic Specialist (Higher Education Program)
+						Study in BSEU - Belorussian State Economic University as a Marketing&Economic Specialist (Higher Education Program)
 					</BioSection>
 					<BioSection>
 						<BioYear>2021 - present</BioYear>

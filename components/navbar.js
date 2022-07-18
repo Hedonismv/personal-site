@@ -69,6 +69,7 @@ const Navbar = props => {
 					<LinkItem href={'/works'} path={path}>
 						Works
 					</LinkItem>
+					<LinkItem href={'/vk_cv.pdf'} download={'CV'}>Download My CV</LinkItem>
 				</Stack>
 				<Box flex={1} align={'right'}>
 					<ThemeToggleBtn/>
